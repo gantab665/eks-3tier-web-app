@@ -40,39 +40,32 @@ MongoDB (ClusterIP Service)
 
 ## 📁 Project Structure
 
+- frontend  
+  - Dockerfile  
+  - nginx.conf  
+  - public/  
+  - src/  
+
+- backend  
+  - Dockerfile  
+  - package.json  
+  - server.js  
+
+- k8s_manifests  
+  - frontend  
+    - frontend-deployment.yaml  
+    - frontend-service.yaml  
+  - backend  
+    - backend-deployment.yaml  
+    - backend-service.yaml  
+  - mongo_v1  
+    - deploy.yaml  
+    - service.yaml  
+    - secrets.yaml  
+
+- README.md
 
 
-eks-3tier-web-app/
-│
-├── frontend/
-│ ├── Dockerfile
-│ ├── nginx.conf
-│ ├── public/
-│ └── src/
-│
-├── backend/
-│ ├── Dockerfile
-│ ├── package.json
-│ └── server.js
-│
-├── k8s_manifests/
-│ ├── frontend/
-│ │ ├── frontend-deployment.yaml
-│ │ └── frontend-service.yaml
-│ │
-│ ├── backend/
-│ │ ├── backend-deployment.yaml
-│ │ └── backend-service.yaml
-│ │
-│ └── mongo_v1/
-│ ├── deploy.yaml
-│ ├── service.yaml
-│ └── secrets.yaml
-│
-└── README.md
-
-
----
 
 ## 🚀 Application Flow
 
