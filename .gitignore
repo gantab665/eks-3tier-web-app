@@ -1,0 +1,16 @@
+# Node
+node_modules
+npm-debug.log
+
+# Build
+build
+dist
+
+# Environment
+.env
+
+# OS
+.DS_Store
+
+# Kubernetes local files
+*.log
